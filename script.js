@@ -33,6 +33,11 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+    $('.navbar .menu li a').click(function(){
+        $('.navbar .menu').removeClass("active");
+        $('.menu-btn i').removeClass("active");
+    });
+
     let urlGit = "https://raw.githubusercontent.com/AlarconVinicius/Portfolio-Alarcon-Vinicius/main/arq_json/projetos.json";
 
     let http = new XMLHttpRequest();
