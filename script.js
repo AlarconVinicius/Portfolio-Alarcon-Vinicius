@@ -46,7 +46,7 @@ $(document).ready(function(){
     http.onload = function(){
         if(this.readyState = 4 && this.status == 200){
             let projects = JSON.parse(this.responseText);
-            console.log(projects);
+            // console.log(projects);
             let output = "";
             for(let project of projects){
 
@@ -85,25 +85,3 @@ $(document).ready(function(){
     }
     
 });
-
-// fetch("projetos.json")
-//     .then(function(response){
-//         return response.json();
-//     })
-//     .then(function(projetos){
-//         let placeholder = document.querySelector("#projects-card");
-//         let out = "";
-//         for(let project of projects){
-
-//             out += `
-//                 <div class="card">
-//                     <div class="box">
-//                         <div class="text">${project.titulo}</div>
-//                         <p>${project.descricao}</p>
-//                         <a href="${project.link}" target="_blank" class="btn-outline-green">Ver Mais</a>
-//                     </div>
-//                 </div>
-//             `;
-//         }
-//         placeholder.innerHTML = out;
-//     })
