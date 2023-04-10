@@ -41,13 +41,14 @@ $(document).ready(function(){
      });
 
      var typed = new Typed(".typing", {
-         strings:["Desenvolvedor Back-end", "Desenvolvedor Front-end", "Analista de Dados", "Freelancer"],
+         strings:["Desenvolvedor Back-end", "Desenvolvedor Front-end", "Freelancer"],
+        //  strings:["Desenvolvedor Back-end", "Desenvolvedor Front-end", "Analista de Dados", "Freelancer"],
          typeSpeed:100,
          backSpeed:60,
          loop:true
      });
      var typed = new Typed(".typing-2", {
-        strings:["Desenvolvedor Back-end", "Desenvolvedor Front-end", "Analista de Dados", "Freelancer"],
+        strings:["Desenvolvedor Back-end", "Desenvolvedor Front-end", "Freelancer"],
         typeSpeed:100,
         backSpeed:60,
         loop:true

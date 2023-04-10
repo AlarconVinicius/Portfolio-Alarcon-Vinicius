@@ -327,7 +327,28 @@ section .title::after {
     color: var(--main-details-color);
     background: none;
 }
-.skills .skills-content .right .bars{
+.skills .skills-content .right ul{
+    list-style-type: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+.skills .skills-content .right ul li{
+    font-weight: 500;
+}
+.skills .skills-content .right ul li::before{
+    /* content: "•";
+    color: green;
+    width: 1em; */
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: var(--main-details-color);
+    border-radius: 50%;
+    margin-right: 0.5em; 
+}
+/* .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
 .skills .skills-content .right .info{
@@ -376,7 +397,7 @@ section .title::after {
 }
 .skills .skills-content .right .powerbi::before{
     width: 64%;
-}
+} */
 
 /* Team Início */
 .projects .title::after{
@@ -384,6 +405,7 @@ section .title::after {
 }
 .projects .carousel .card{
     background: var(--main-bg2-color);
+    min-height: 270px;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -633,6 +655,11 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    .skills .skills-content .right ul{
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+    }
     footer{
         margin-top: 15px;
     }
@@ -665,5 +692,10 @@ footer span a:hover{
     .about .about-content .left img {
         width: 150px;
         height: 150px;
+    }
+    .skills .skills-content .right ul{
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
     }
 }
