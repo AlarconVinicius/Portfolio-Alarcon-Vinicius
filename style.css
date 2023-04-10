@@ -337,7 +337,7 @@ section .title::after {
 .skills .skills-content .right ul li{
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .skills .skills-content .right ul li::before{
     /* content: "•";
