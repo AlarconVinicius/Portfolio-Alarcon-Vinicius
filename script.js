@@ -53,3 +53,49 @@ $(document).ready(function(){
         }
     });
 });
+let urlGit = "https://raw.githubusercontent.com/AlarconVinicius/Portfolio-Alarcon-Vinicius/main/arq_json/projetos.json";
+
+let http = new XMLHttpRequest();
+http.open('get', urlGit, true);
+http.send();
+http.onload = function(){
+    if(this.readyState = 4 && this.status == 200){
+        let projects = JSON.parse(this.responseText);
+
+        let output = "";
+        for(let project of projects){
+
+            output += `
+                <div class="card">
+                    <div class="box">
+                        <div class="text">${project.titulo}</div>
+                        <p>${project.descricao}</p>
+                        <a href="${project.link}" target="_blank" class="btn-outline-green">Ver Mais</a>
+                    </div>
+                </div>
+            `;
+        }
+        document.querySelector("#projects-card").innerHTML = output;
+    }
+}
+// fetch("projetos.json")
+//     .then(function(response){
+//         return response.json();
+//     })
+//     .then(function(projetos){
+//         let placeholder = document.querySelector("#projects-card");
+//         let out = "";
+//         for(let project of projects){
+
+//             out += `
+//                 <div class="card">
+//                     <div class="box">
+//                         <div class="text">${project.titulo}</div>
+//                         <p>${project.descricao}</p>
+//                         <a href="${project.link}" target="_blank" class="btn-outline-green">Ver Mais</a>
+//                     </div>
+//                 </div>
+//             `;
+//         }
+//         placeholder.innerHTML = out;
+//     })

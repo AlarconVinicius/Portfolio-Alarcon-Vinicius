@@ -1,23 +1,44 @@
 [  
     {
         "id": 1,
-        "titulo": "Controle de Estoque | API",
+        "titulo": "CRUD DDD | API",
         "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.",
-        "linguagens": ["C#", "PHP", "JS", "Python"],
-        "link": "https://github.com/AlarconVinicius/ProjApiControleEstoque"
+        "linguagens": ["C#"],
+        "link": "https://github.com/AlarconVinicius/CRUD_API_DDD"
     },
     {
         "id": 2,
         "titulo": "Controle de Financeiro | API",
         "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.",
-        "linguagens": ["C#", "PHP", "JS", "Python"],
+        "linguagens": ["C#"],
         "link": "https://github.com/AlarconVinicius/FinancialAppProject"
     },
     {
         "id": 3,
         "titulo": "Controle de Financeiro | Front-end",
         "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.",
-        "linguagens": ["C#", "PHP", "JS", "Python"],
+        "linguagens": ["JS", "Angular 15"],
         "link": "https://github.com/AlarconVinicius/FinancialFrontProject"
+    },
+    {
+        "id": 4,
+        "titulo": "Blog de Receitas | Full-Stack",
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.",
+    "linguagens": ["PHP", "Laravel 8"],
+        "link": "https://github.com/AlarconVinicius/MyRecipeBlog"
+    },
+    {
+        "id": 5,
+        "titulo": "Conversor de CSV para MySQL | App",
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.",
+        "linguagens": ["Python"],
+        "link": "https://github.com/AlarconVinicius/Import_CSV_To_Database"
+    },
+    {
+        "id": 6,
+        "titulo": "Controle de Estoque | API",
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.",
+        "linguagens": ["C#"],
+        "link": "https://github.com/AlarconVinicius/ProjApiControleEstoque"
     }
 ]
